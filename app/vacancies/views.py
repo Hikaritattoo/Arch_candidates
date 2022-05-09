@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template
 from .dao.vacancies_dao import VacanciesDAO
 
+
 vacancies_blueprint = Blueprint('vacancies_blueprint', __name__, template_folder="templates")
 
 # Создаем DAO для вакансий
@@ -17,3 +18,4 @@ def page_vacancies():
 def page_vacancy(pk):
     vacancy = vacancies_dao.get_by_pk(1)
     return render_template("vacancies_single.html", vacancy=vacancy)
+

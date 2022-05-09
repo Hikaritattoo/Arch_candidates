@@ -1,4 +1,4 @@
-from app.candidates.dao.candidates_dao import CandidateDAO
+from app.candidates.dao.candidate_dao import CandidateDAO
 
 import pytest
 
