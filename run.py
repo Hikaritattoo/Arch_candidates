@@ -10,5 +10,5 @@ app.register_blueprint(main_blueprint)
 app.register_blueprint(candidates_blueprint)
 app.register_blueprint(vacancies_blueprint)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
